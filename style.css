@@ -9,11 +9,11 @@
 }
 
 .menu li a.Email:before {
-    content: "\f518";
+    content: "\e43b";
 }
 
 .menu li a.Vendas:before {
-    content: "\f1ea";
+    content: "\f590";
 }
 
 .menu li a.Canal:before {
@@ -25,7 +25,7 @@
 }
 
 .menu li a.Home:before {
-    content: "\f19d";
+    content: "\f207";
     }
 
 body {
