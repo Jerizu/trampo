@@ -1,0 +1,308 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lightblue;
+    background-size: auto 100vh;
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.menu,
+.menu-bar {
+    position: fixed;
+    left: 0;
+    height: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background: #f7f7f7;
+    z-index: 10;
+    overflow: hidden;
+    box-shadow: 0px 0 18px rgba(0, 0, 0, 0.26);
+    border-radius: 0px 20px 20px 0px;
+}
+
+.menu li a {
+    display: inline-block;
+    text-indent: -500em;
+    height: 2.5em;
+    width: 3.5em;
+    line-height: 2.5em;
+    text-align: center;
+    color: #72739f;
+    position: relative;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    transition: background 0.1s ease-in-out;
+    font-family: FontAwesome;
+    border-radius: 20px;
+}
+.menu a.texto{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:black;
+    text-decoration: none;
+    position: relative;
+    padding-left: 7%;
+    top: 20%;
+}
+.menu li a:before {
+    font-family: FontAwesome;
+    text-indent: 0em;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 1.4em;
+}
+.menu li a.Configuracoes:before {
+    content: "\f002";
+}
+
+.menu li a.Email:before {
+    content: "\f187";
+}
+
+.menu li a.Vendas:before {
+    content: "\f040";
+}
+
+.menu li a.Canal:before {
+    content: "\f003";
+}
+
+.menu li a.Suporte:before {
+    content: "\f007";
+}
+
+.menu li a.Home:before {
+    content: "\f039";
+    }
+
+.menu-bar li a:hover,
+.menu li a:hover {
+    background: #267fdd;
+    color: #fff;
+}
+
+.menu-bar {
+    overflow: hidden;
+    left: 3.5em;
+    z-index: 5;
+    width: 0;
+    height: 0;
+    transition: all 0.1s ease-in-out;
+}
+
+.menu-bar li a {
+    display: block;
+    height: 2.5em;
+    line-height: 2.5em;
+    text-align: center;
+    color: #72739f;
+    text-decoration: none;
+    position: relative;
+    font-family: verdana;
+    border-bottom: 0px solid rgba(0, 0, 0, 0.05);
+    transition: background 0.1s ease-in-out;
+    border-radius: 20px;
+}
+::marker {
+    color: lightblue;
+    unicode-bidi: isolate;
+    font-variant-numeric: tabular-nums;
+    text-transform: none;
+    text-indent: 0px !important;
+    text-align: start !important;
+    text-align-last: start !important;
+}
+.divButton {
+    margin: auto;
+    position:relative;
+    display:list-item;  
+    justify-content: center;  
+    align-items: center; 
+    padding-top: 15%; 
+    width: 200px;
+    }  
+button {
+    background-color: grey;
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    align-self: center;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    height: auto;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+.portal{
+    padding-left: 13%;
+    position:fixed;
+    justify-content: center;  
+    align-items: center; 
+    height: 100%;
+    width: 100%;
+}
+
+.iframe{
+    width: 100%;
+    height: 100%;
+}
+.para {
+    color: #033f72;
+    padding-left: 100px;
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.open {
+    width: auto;
+    height: auto;
+}
+
+@media all and (max-width: 450px) {
+    .container {
+        margin-top: 100px;
+    }
+    .menu {
+        height: 2.5em;
+        width: 100%;
+        border-radius: 0px 0px 20px 20px;
+    }
+    .menu li a.menu-button {
+        width: 5em;
+        border-radius: 20px;
+    }
+    .menu li a {
+        width: 3.5em;
+        border-radius: 20px;
+    }
+    .menu li {
+        display: inline-block;
+    }
+    .menu-bar li a {
+        width: 100%;
+    }
+    .menu-bar {
+        width: 100%;
+        left: 0;
+        height: 0;
+        top: 2.5em;
+        border-radius: 20px;
+    }
+    .menu-bar li a {
+        width: 5em;
+        border-radius: 20px;
+    }
+    .open {
+        width: 80px;
+        height: auto;
+    }
+    .para {
+        padding-left: 5px;
+    }
+    .menu a.texto{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color:black;
+        text-decoration: none;
+        position: relative;
+        padding-left: 3%;
+        top: 5%;
+    
+}
+@media all and (max-width: 380px) {
+    .container {
+        margin-top: 100px;
+    }
+    .menu {
+        height: 2.5em;
+        width: 100%;
+        border-radius: 0px 0px 20px 20px;
+    }
+    .menu li a.menu-button {
+        width: 5em;
+        border-radius: 20px;
+    }
+    .menu li a {
+        width: 2.5em;
+        border-radius: 20px;
+    }
+    .menu li {
+        display: inline-block;
+    }
+    .menu-bar li a {
+        width: 100%;
+    }
+    .menu-bar {
+        width: 100%;
+        left: 0;
+        height: 0;
+        top: 2.5em;
+        border-radius: 20px;
+    }
+    .menu-bar li a {
+        width: 5em;
+        border-radius: 20px;
+    }
+    .open {
+        width: 80px;
+        height: auto;
+    }
+    .para {
+        padding-left: 5px;
+    }
+}
+
+@media screen and (max-height: 24em) {
+    .menu li,
+    .menu-bar {
+        font-size: 85%;
+        width: auto;
+    }
+    .menu {
+        border-radius: 0px 0px 20px 20px;
+        height: auto;
+    }
+}
+
+@media screen and (min-width:257px) and (max-width: 300px) {
+    .menu li,
+    .menu-bar {
+        font-size: 85%;
+        width: auto;
+    }
+    .menu {
+        border-radius: 0px 0px 20px 20px;
+        height: auto;
+    }
+    .menu-bar {
+        top: 2.5em;
+    }
+}
+
+@media screen and (max-width:257px) {
+    .menu li,
+    .menu-bar {
+        font-size: 85%;
+        width: auto;
+    }
+    .menu {
+        border-radius: 0px 0px 20px 20px;
+        height: auto;
+    }
+    .menu-bar {
+        top: 5em;
+    }
+}
