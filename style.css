@@ -176,6 +176,9 @@ button:hover{
     .container {
         margin-top: 100px;
     }
+    .menu,.menu-bar {
+    position: relative;
+    }
     .menu {
         height: 3.3em;
         width: 100%;
@@ -187,7 +190,7 @@ button:hover{
     }
     .menu li a {
         padding-inline: 0.5em;
-        width: auto;
+        width: 3.4em;
         border-radius: 20px;
     }
     .menu li {
@@ -231,13 +234,16 @@ button:hover{
         width: 100%;
         border-radius: 0px 0px 20px 20px;
     }
+    .menu,.menu-bar {
+        position: relative;
+    }
     .menu li a.menu-button {
         width: 5em;
         border-radius: 20px;
     }
     .menu li a {
         padding-inline: 0.5em;
-        width: auto;
+        width: relative;
         border-radius: 20px;
     }
     .menu li {
@@ -288,9 +294,12 @@ button:hover{
         border-radius: 0px 0px 20px 20px;
         height: 3.3em;
     }
+    .menu,.menu-bar {
+        position: relative;
+    }
      .menu li a {
         padding-inline: 0.5em;
-        width: auto;
+        width: 3.4em;
         border-radius: 0px 0px 20px 20px;
     }
     .menu-bar {
@@ -310,6 +319,9 @@ button:hover{
     }
     .menu-bar {
         top: 5em;
+    }
+    .menu,.menu-bar {
+        position: relative;
     }
     .divButton {
     margin: auto;
